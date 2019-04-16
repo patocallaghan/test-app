@@ -15,7 +15,12 @@ module.exports = function(deployTarget) {
     sentryOrganizationSlug: 'patocallaghan',
     sentryProjectSlug: 'test-app',
     
-    sentryBearerApiKey: process.env.SENTRY_TOKEN
+    sentryBearerApiKey: process.env.SENTRY_TOKEN,
+    revisionKey: "cff1bc7fb251e92fbc1132047cc6d222aec5df0e",
+    revisionCommits: [{
+      repository: "patocallaghan/test-app",
+      commit: "cff1bc7fb251e92fbc1132047cc6d222aec5df0e"
+    }]
   }
 
   if (deployTarget === 'development') {
