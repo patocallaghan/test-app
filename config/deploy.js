@@ -7,6 +7,7 @@ module.exports = function(deployTarget) {
     // include other plugin configuration that applies to all deploy targets here
   };
 
+  const commitSHA = 'c754b17272131c69c6bc0704973dfba4d8270edd';
   ENV.sentry = {
     // the URL or CDN your js assets are served from
     publicUrl: 'https://localhost:4200',
@@ -16,10 +17,10 @@ module.exports = function(deployTarget) {
     sentryProjectSlug: 'test-app',
     
     sentryBearerApiKey: process.env.SENTRY_TOKEN,
-    revisionKey: "cff1bc7fb251e92fbc1132047cc6d222aec5df0e",
+    revisionKey: commitSHA,
     revisionCommits: [{
       repository: "patocallaghan/test-app",
-      commit: "cff1bc7fb251e92fbc1132047cc6d222aec5df0e"
+      commit: commitSHA
     }]
   }
 
