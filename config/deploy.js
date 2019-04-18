@@ -21,7 +21,7 @@ module.exports = function(deployTarget) {
     revisionCommits: function() {
       return [{
         repository: "patocallaghan/test-app",
-        commit: commitSHA
+        id: commitSHA
       }];
     }
   }
