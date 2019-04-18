@@ -7,7 +7,7 @@ module.exports = function(deployTarget) {
     // include other plugin configuration that applies to all deploy targets here
   };
 
-  const commitSHA = '85deedc37869188823d684b4323231600e251295';
+  const commitSHA = 'a6998257f91d454f492df7587151e0ddad94c23e';
   ENV.sentry = {
     // the URL or CDN your js assets are served from
     publicUrl: 'https://localhost:4200',
